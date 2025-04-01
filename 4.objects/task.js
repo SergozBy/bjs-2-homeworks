@@ -10,21 +10,21 @@ function Student(name, gender, age) {
     }
 }
 
-Student.prototype.setSubject = function(subjectName) {
-        this.subject = subjectName;
+Student.prototype.setSubject = function (subjectName) {
+    this.subject = subjectName;
 }
 
 Student.prototype.addMarks = function (...marksToAdd) {
-  if (!this.marks) {
-      console.log("Error: Student has been expelled.");
-      return;
-  }
+    if (!this.marks) {
+        console.log("Error: Student has been expelled.");
+        return;
+    }
 
-  if (!!marksToAdd.length) {
-      this.marks.push(...marksToAdd);
-  }
+    if (!!marksToAdd.length) {
+        this.marks.push(...marksToAdd);
+    }
 
-  return;
+    return;
 }
 
 Student.prototype.getAverage = function () {
@@ -37,7 +37,7 @@ Student.prototype.getAverage = function () {
 }
 
 Student.prototype.exclude = function (reason) {
-  delete this.subject;
-  delete this.marks;
-  this.excluded = reason;
+    delete this.subject;
+    delete this.marks;
+    this.excluded = reason;
 }
