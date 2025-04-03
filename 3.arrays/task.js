@@ -16,7 +16,7 @@ function getUsersNamesInAgeRange(users, gender) {
       return 0;
   }
 
-  const age = filteredUsers.map(user => user.age);
+  const ages = filteredUsers.map(user => user.age);
   const averageAge = (ages.reduce((sum, age) => (sum + age)))/filteredUsers.length;
 
   return averageAge;
