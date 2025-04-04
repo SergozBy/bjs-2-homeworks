@@ -30,7 +30,7 @@ class AlarmClock {
         let hours = now.getHours();
         let minutes = now.getMinutes();
 
-        return '${hours}:${minutes}';
+        return `${hours}:${minutes}`;
     }
 
     start() {
