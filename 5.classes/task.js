@@ -35,7 +35,7 @@ class Magazine extends PrintEditionItem {
 
 class Book extends PrintEditionItem {
     constructor(author, name, releaseDate, pageCount) {
-        super(author, name, releaseDate, pageCount);
+        super(name, releaseDate, pageCount);
         this.author = author;
         this.type = "book";
     }
