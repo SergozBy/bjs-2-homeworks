@@ -34,7 +34,7 @@ class AlarmClock {
     }
 
     start() {
-        if (this.inervalid) {
+        if (this.intervalId) {
             return;
         }
 
